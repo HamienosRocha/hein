@@ -24,6 +24,12 @@ body {
   animation: hein-animation 2s infinite;
 }
 
+.audio-coontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @keyframes  hein-animation {
   0% { text-shadow: 0 0 0 #fb8500, 0 0 0 #ffb703;}
@@ -35,4 +41,9 @@ body {
   75% {text-shadow: -1rem 1rem 0 #fb8500,  1rem -1rem 0 #ffb703;}
 
   100% { text-shadow: 0 0 0 #fb8500, 0 0 0 #ffb703;}
+}
+
+@media only screen and (max-width: 425px) {
+  .hein {font-size: 7rem}
+  #hein-audio {width: 24rem;}
 }
